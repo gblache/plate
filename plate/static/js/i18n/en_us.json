@@ -1,3 +1,8 @@
 {
-  "login-header": "Login"
+  "hi": "Hi",
+  "logged-in-as": "You are logged in as",
+  "logout": "Logout",
+  "login": "Login",
+  "choose-service": "Choose from a service below to login to the application.",
+  "google": "Google"
 }

@@ -1,5 +1,5 @@
 <div class="hero-unit">
-  <h1>Hi</h1>
-  <p>You are logged in as {{ user.email }}.</p>
-  <p><button class="btn btn-danger logout" data-url="{{ urls.base_logout }}">Logout</button></p>
+  <h1>{{$ 'hi' }}</h1>
+  <p>{{$ 'logged-in-as'}}{{ user.email }}.</p>
+  <p><button class="btn btn-danger logout" data-url="{{ urls.base_logout }}">{{$ 'logout'}}</button></p>
 </div>
