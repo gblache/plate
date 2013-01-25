@@ -1,7 +1,7 @@
 # What is this?
 This is a boilerplate Django project with:
 * A base user system using [django-social-auth](https://github.com/omab/django-social-auth), with the Google OAuth2 login implemented.
-* A JS framework using CoffeeScript, RequireJS, Backbone, Handlebars and Boostrap.
+* A JS framework using CoffeeScript, RequireJS, Backbone, Handlebars and Bootstrap.
 * A build and deploy process.
 
 ## Installing dependencies
