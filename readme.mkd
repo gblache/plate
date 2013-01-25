@@ -1,0 +1,49 @@
+# What is this?
+This is a boilerplate Django project with:
+* A base user system using `socialauth`, with Google login implemented.
+* A JS framework using CoffeeScript, RequireJS, Backbone, Handlebars and Boostrap.
+* A build and deploy process.
+
+## Installing dependencies
+`pip install -r requirements.txt`
+
+## Configuring
+Look in `plate/settings_env` and edit the `local.py` and `heroku.py` settings as needed.
+
+Get your Google OAuth2 credentials here:
+https://code.google.com/apis/console/
+
+Be sure to set the redirect url to:
+`http://YOUR_DOMAIN/complete/google-oauth2/`
+
+## Working with CoffeeScript
+This project uses CoffeeScript, the .coffee files are located in `static/coffee`.
+
+To recursively watch the coffee dir for changes run this command:
+`coffee -o plate/static/js/ -cw plate/static/coffee/`
+
+## Setting up Heroku
+
+* `heroku create`
+* `git push heroku master`
+* `heroku run python manage.py syncdb`
+
+## Deployment
+
+You'll need to create and commit your built static assets before you deploy.
+
+* `./manage.py compile_javascript`
+* `./manage.py compile_css`
+
+## Requirements
+
+* Node (For building the JS) http://nodejs.org/
+* CoffeeScript http://coffeescript.org/
+
+## TODO
+
+* Handle rejected auth requests and login errors.
+* Better handling of view loading errors.
+* Support for different layouts.
+* Add unique constraints on email.
+
