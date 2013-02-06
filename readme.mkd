@@ -26,6 +26,7 @@ To recursively watch the coffee dir for changes run this command:
 
 * `heroku create`
 * `git push heroku master`
+* `heroku config:add DJANGO_ENV=heroku`
 * `heroku run python manage.py syncdb`
 
 ## Deployment
